@@ -1,83 +1,111 @@
-# Zepto SQL & Power BI Analysis
+# Zepto Inventory & Sales Analysis
 
-An end-to-end data analytics portfolio project focused on analyzing Zepto inventory and product data using **MySQL** and **Microsoft Power BI**.
+> An end-to-end data analytics project using **Power BI** and **SQL** to analyze Zepto product, pricing, revenue, discount, and inventory data.
 
-This project demonstrates how raw business data can be transformed into meaningful insights through data cleaning, SQL analysis, data modeling, and interactive dashboard design.
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?logo=powerbi&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-Analysis-336791?logo=postgresql&logoColor=white)
+![Status](https://img.shields.io/badge/Project-Completed-2ea44f)
 
 ## Project Overview
 
-This analysis explores Zepto's product and inventory data to understand product availability, pricing, discounts, category performance, and overall inventory trends.
+This project analyzes Zepto's product and inventory dataset to turn raw e-commerce data into clear, business-focused insights.
 
-The final Power BI dashboard provides an interactive view of the data and helps identify patterns that can support better business decisions.
+The interactive Power BI dashboard gives a high-level view of product count, revenue, discounts, category performance, stock availability, and product-level pricing patterns.
 
-## Objectives
+## Dashboard Snapshot
 
-- Analyze product and category performance
-- Understand inventory availability and stock levels
-- Compare product prices, discounts, and selling prices
-- Identify high-value and low-performing products
-- Create an interactive dashboard for business reporting
-- Practice an end-to-end data analyst workflow
+The dashboard currently highlights:
 
-## Tools & Technologies
+| KPI | Value |
+|---|---:|
+| Total Products | **4K** |
+| Total Revenue | **2.24M** |
+| Average Discount | **7.63%** |
+| In Stock | **87.85%** |
+| Out of Stock | **12.15%** |
 
-- **MySQL** – Data cleaning, transformation, and analysis
-- **Power BI** – Data modeling, visualization, and dashboard development
-- **SQL** – Filtering, aggregation, grouping, and business analysis
+## Business Questions
 
-## Analysis Workflow
+- Which product categories generate the most revenue?
+- How much of the product catalogue is currently in stock?
+- Which products have the highest discounts?
+- How do MRP and discounted selling prices compare?
+- Which categories and products may need additional inventory or pricing attention?
 
-1. Prepared and cleaned the source data
-2. Loaded the data into MySQL
-3. Performed exploratory analysis using SQL queries
-4. Created analysis-ready datasets
-5. Connected the data to Power BI
-6. Built interactive visuals and dashboard views
-7. Developed insights from product, pricing, and inventory trends
+## Dashboard Sections
 
-## Dashboard Features
+### Revenue by Category
 
-The Power BI dashboard includes analysis of:
+A category-level comparison of revenue, making it easier to identify the strongest contributors to overall sales.
 
-- Product and category distribution
-- Available and out-of-stock products
-- MRP, selling price, and discount patterns
-- Product-level and category-level performance
-- Inventory-related trends and comparisons
-- Key business metrics and interactive filters
+### Stock Status
+
+A view of available versus out-of-stock products, helping assess catalogue availability and inventory health.
+
+### Top Discounted Products
+
+A ranked view of products offering the highest discounts.
+
+### MRP vs Discount Analysis
+
+A product-level price comparison showing the relationship between MRP and discounted selling price.
+
+## Dataset
+
+The analysis uses the following fields from the Zepto dataset:
+
+- Category
+- Product name
+- MRP
+- Discount percentage
+- Available quantity
+- Discounted selling price
+- Product weight
+- Out-of-stock status
+- Quantity
+
+## Tools Used
+
+- **Power BI** – Dashboard design, data modeling, KPI cards, charts, filters, and storytelling
+- **SQL / MySQL** – Data preparation, aggregation, exploration, and business analysis
+- **CSV** – Source dataset
+
+## Project Workflow
+
+1. Collected and reviewed the Zepto product dataset
+2. Cleaned and prepared the data for analysis
+3. Used SQL concepts to explore product, pricing, and inventory trends
+4. Built the data model in Power BI
+5. Created KPI cards and interactive visuals
+6. Developed a business-focused dashboard
+7. Presented the key findings through visual storytelling
+
+## Repository Contents
+
+| File / Folder | Description |
+|---|---|
+| `zepto_v2.csv` | Source dataset used for the analysis |
+| `Zepto Dashboard.pbix` | Power BI dashboard file |
+| `README.md` | Project documentation |
 
 ## Key Skills Demonstrated
 
 - Data cleaning and preparation
-- SQL querying and exploratory data analysis
-- Business-focused analytical thinking
-- Power BI data modeling
-- Dashboard design and storytelling
-- Communicating insights clearly through visualizations
-
-## Repository Structure
-
-```text
-├── SQL/                 # SQL queries used for analysis
-├── Power BI/            # Dashboard file and related assets
-├── Data/                # Source or prepared datasets
-└── README.md            # Project documentation
-```
-
-> Folder names may vary depending on the files included in the repository.
-
-## Dashboard Preview
-
-Add a screenshot or GIF of the Power BI dashboard here:
-
-```markdown
-![Zepto Power BI Dashboard](path/to/dashboard-screenshot.png)
-```
+- SQL-based exploratory data analysis
+- Power BI dashboard development
+- KPI and metric design
+- Inventory and pricing analysis
+- Data visualization and storytelling
+- Translating data into business insights
 
 ## Conclusion
 
-This project showcases a complete analytics workflow, from raw data preparation and SQL analysis to Power BI dashboard development. It was created as part of my data analytics portfolio to demonstrate practical skills in SQL, Power BI, and business intelligence.
+This project demonstrates a complete analytics workflow, from raw CSV data to an interactive Power BI dashboard. It showcases practical skills in SQL, Power BI, business analysis, and communicating insights through clear visualizations.
 
-## Connect With Me
+## Connect
 
-If you found this project useful or have feedback, feel free to connect with me on [LinkedIn](https://www.linkedin.com/) or explore my other projects on [GitHub](https://github.com/datawithanuj).
+If you have feedback or would like to discuss the project, connect with me on [LinkedIn](https://www.linkedin.com/) or explore more projects on [GitHub](https://github.com/datawithanuj).
+
+---
+
+*Built as part of my data analytics portfolio.*
